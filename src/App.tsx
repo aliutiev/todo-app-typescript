@@ -71,7 +71,6 @@ const App: React.FC = () => {
     <DragDropContext onDragEnd={onDragEnd}>
       <div className="App">
         <span className='heading'>Taskify</span>
-
         <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}></InputField>
         <TodoList
           todos={todos}
@@ -79,61 +78,9 @@ const App: React.FC = () => {
           completedTodos={completedTodos}
           setCompletedTodos={setCompletedTodos}
         ></TodoList>
-
-
-        {/* {todos.map((t) => (<li>{t.todo}</li>))} */}
-
       </div>
     </DragDropContext>
   );
 }
 
 export default App;
-
-
-// let name: string;
-// let age: number | string;
-// let isStudent: boolean;
-// let hobbies: string [];
-// let role: [number, string];
-
-// let personName:unknown;
-
-// interface Person {
-//   name: string;
-//   age?: number;
-// }
-
-// interface Guy extends Person{
-//   profession: string;
-// }
-
-// type X = {
-//   a: string;
-//   b: number;
-// }
-
-// type Y = {
-//   c: string;
-//   d: number;
-// }
-
-// let y: Y = {
-//   c: "efdas",
-//   d: 42,
-// };
-
-// function printName(name : string){
-//   console.log(name);
-// }
-
-// let printName: (name:string) => never;
-
-//void returns undefined, never returns nothing
-
-// let person: Person = {
-//   name: "Piyush",
-//   age: 22,
-// };
-
-// let people: Person[];
